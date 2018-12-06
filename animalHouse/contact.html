@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Animal House</title>
+  <link href='https://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://i.icomoon.io/public/temp/2188f66963/UntitledProject/style.css">
+  <link href="css/stylesheet.css" rel="stylesheet">
+  <script type="text/javascript" src="jquery-1.12.3.min.js"></script>
+</head>
+<body>
+<!-- MAIN HEADER Start -->
+  <div class="main_header">
+    <div class="social_media">
+      <ul>
+        <li>
+          <a href="#"><span class="icon-facebook2"></span></a>
+        </li>
+        <li>
+          <a href="#"><span class="icon-yelp"></span></a>
+        </li>
+      </ul>
+    </div>
+    <div class="logo">
+      <a href="index.html"><img src="img/logo.png"></a>
+    </div>
+    <nav class="main_nav">
+      <ul>
+        <li class="li1">
+          <a href="whoweare.html">Who We Are</a>
+        </li>
+        <li class="li2">
+          <a href="whatweoffer.html">What We Offer</a>
+        </li>
+        <li class="li3">
+          <a href="products.html">Products We Love</a>
+        </li>
+        <li class="li4">
+          <a href="contact.html">Ways to Contact Us</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+<!-- MAIN HEADER End -->
+
+<!-- BODY Start -->
+  <div class="section_body">
+    <div class="map_outer">
+      <div class="map_inner">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2714.3691147900677!2d-119.27821218416213!3d47.13103412870098!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x549938a51fab809b%3A0xf5e3faa7a6d81558!2s215+E+3rd+Ave%2C+Moses+Lake%2C+WA+98837!5e0!3m2!1sen!2sus!4v1462984943131"
+        frameborder="0" style="border:0" allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+    <div class="contact_form">
+      <h1>Send Us A Message!</h1>
+      <form action="/my-handling-form-page" method="post">
+        <div>
+          <input type="text" id="first_name" placeholder="First Name"/>
+        </div>
+        <div>
+          <input type="text" id="last_name" placeholder="Last Name"/>
+        </div>
+        <div>
+          <input type="email" id="mail" placeholder="Email Address"/>
+        </div>
+        <div>
+          <textarea id="msg" placeholder="Your Message"></textarea>
+        </div>
+        <a href="#"><div class="button">
+          <button type="submit">Send</button>
+        </div></a>
+      </form>
+    </div>
+  </div>
+<!-- BODY End -->
+
+<!-- FOOTER Start -->
+<div class="footer">
+  <div class="footer_info">
+    <h3 class="hours">Open 9-5</h3>
+    <h3 class="phone"><a href="tel:+1-509-765-5697">(509) 765-5697</a></h3>
+    <p class="address">215 E 3rd Avenue<br>Moses Lake, Washington 98837</p>
+  </div>
+  <div class="copywrite">
+    <p>Copyright 2016. <a href="http://www.graycoltdevelopers.com">Gray Colt Developers Group</a></p>
+  </div>
+</div>
+<!-- FOOTER End -->
+<script>
+$( ".li1" ).hover(
+  function() {
+    $( this ).addClass("prints");
+  }, function() {
+    $( this ).removeClass("prints");
+  }
+);
+</script>
+<script>
+$( ".li2" ).hover(
+  function() {
+    $( this ).addClass("brush");
+  }, function() {
+    $( this ).removeClass("brush");
+  }
+);
+</script>
+<script>
+$( ".li3" ).hover(
+  function() {
+    $( this ).addClass("bone");
+  }, function() {
+    $( this ).removeClass("bone");
+  }
+);
+</script>
+<script>
+$( ".li4" ).hover(
+  function() {
+    $( this ).addClass("howl");
+  }, function() {
+    $( this ).removeClass("howl");
+  }
+);
+</script>
+
+
+</body>
+</html>

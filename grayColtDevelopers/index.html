@@ -1,0 +1,113 @@
+<!DOCTYPE>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/style.css" type="text/css">
+  <title>Gray Colt Developers Group</title>
+</head>
+
+<body>
+
+  <!-- Body Wrapper -->
+  <div class="wrapper">
+    <!-- Main Header -->
+    <div class="bg">
+      <nav class="top_nav">
+        <ul>
+          <li><a href="#home">HOME</a></li>
+          <li><a href="#introduction">INTRODUCTION</a></li>
+          <li><a href="#services">SERVICES</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+          <li><a href="http://www.twitter.com/GrayColtDevelop"><span class="icon-twitter"></span></a></li>
+          <li><a href="https://www.facebook.com/pages/Gray-Colt-Developers-Group/871815332885273?tab=page_info&view"><span class="icon-facebook"></span></a></li>
+        </ul>
+      </nav>
+      <div class="co_name">
+        <h1>GRAY COLT DEVELOPERS</h1>
+        <p>A DEVELOPMENT &amp; DESIGN GROUP</p>
+      </div>
+      <div class="intro_title">
+        <p>INTRODUCTION</p>
+      </div>
+    </div>
+    <!-- End Main Header -->
+
+    <!-- Primary Content -->
+    <div id="introduction" class="primary_content">
+      <div class="box_wrap">
+        <h2>We believe design should be simple, effective, and aesthetic. Development should be clean, efficient, and straight-forward.
+        </h2>
+        <p>Gray Colt Developers is a freelance design and development group <br> based out of the Pacific Northwest.</p>
+      </div>
+      <div class="services_title">
+        <h5>SERVICES</h5>
+      </div>
+    </div>
+    <div id="services" class="secondary_content">
+      <div class="image_box"></div>
+      <div class="row border">
+        <div class="column">
+          <span class="icon-display"></span>
+          <h4>Web Design</h4>
+          <p>Responsive web pages that look great on any device.</p>
+        </div>
+        <div class="column">
+          <span class="icon-bulb"></span>
+          <h4>Branding</h4>
+          <p>Developing and distinguishing your business or organization to set it apart from the rest.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="column">
+          <span class="icon-wordpress"></span>
+          <h4>Wordpress</h4>
+          <p>Wordpress setup, theme implementation, and content creation.</p>
+        </div>
+        <div class="column">
+          <span class="icon-world"></span>
+          <h4>Spanish Localization</h4>
+          <p>English to Spanish translation.</p>
+        </div>
+      </div>
+      <div class="contact_title">
+        <h5>CONTACT</h5>
+      </div>
+    </div>
+    <div id="contact" class="tertiary_content">
+      <span class="icon-mail"></span><br>
+      <p>Let's build something together!</p><br>
+      <p>contact@graycoltdevelopers.com</p>
+      <span class="icon-arrow-up2"></span>
+    </div><!-- End Primary Content -->
+    <div class="copyright">
+      <p>&#169; 2015 Gray Colt Developers Group</p>
+    </div>
+  </div><!-- End Body Wrapper -->
+
+  <!-- JavaScript -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      //Show or hide the sticky footer button
+      $(window).scroll(function() {
+        if($(this).scrollTop() > 200) {
+          $('.icon-arrow-up2').fadeIn(200);
+        } else {
+          $('.icon-arrow-up2').fadeOut(200);
+        }
+      });
+
+      //Animate back to top
+      $('.icon-arrow-up2').click(function(event) {
+        event.preventDefault();
+
+        $('html, body').animate({scrollTop: 0}, 300)
+      });
+    });
+  </script>
+</body>
+</html>
